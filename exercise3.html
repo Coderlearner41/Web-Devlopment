@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS card Design</title>
+    <style>
+        #box1{
+            background-color: grey;
+            height: 500px;
+            width:300px;
+            position:relative;
+            left:40%;
+            top:19px;
+        }
+
+        #box2{
+            background-color: white;
+            height:450px;
+            width:280px;
+            display: flex;
+            position: relative;
+            left:10px;
+            top:25px;
+            border-radius: 10px;
+        }
+
+        img{
+            height:200px;
+            width: 250px;
+            position: relative;
+            top:17px;
+            left:15px;
+            border-radius: inherit;
+            display: block;
+        }
+
+        span{
+            position: relative;
+            top: 220px;
+            right:240px;
+            padding: 2px;
+            border-radius: 10px;
+            border: 2px solid grey;
+            height: 15px;
+        }
+
+        h2{
+            position: relative;
+            top: 230px;
+            right:330px;
+            width:auto;
+            height: 2px;
+            display: flex;
+        }
+
+        p{
+            position: relative;
+            top: 180px;
+            right:330px;
+            width:220px; 
+            color: grey;
+        }
+
+        span:nth-child(5){
+            position:relative;
+            top:400px;  
+            right:450px;
+            border:2px solid rgb(151, 218, 240);
+            color: blue;
+            background: rgb(151, 218, 240);
+            text-align: center;
+            height:36px;
+            cursor: pointer;
+        }
+
+        span:nth-child(5):hover{
+            background-color: red;
+            transform: rotatez(90deg);
+            animation:2 sec;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2">
+            <img src="image.jpeg" alt="diwali image">
+            <span>Nature</span>
+            <span>Lake</span>
+            <pre>
+                <h2>Lago Di Braies</h2>
+
+                <p>Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. 
+Nam suscipit odio at facilis 
+iure amet.</p>
+            </pre>
+            <span>Read More </span>
+        </div>
+    </div>
+</body>
+</html>
