@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design This Layout</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            background-color: pink;
-            float: top;
-            height:60px;
-            width: 100vw;
-            position: relative;
-            float: bottom;
-        }
-        .container{
-            background-color: green;
-            height:580px;
-            width:100vw;
-            display: flex;
-            justify-content: center;
-        }
-        .item{
-            position:relative;
-            height:380px;
-            width:80vw;
-            margin: 20px;
-            padding: 50px;
-        }
-        .item1{
-            background-color: lightpink;
-            position: relative;
-            left:200px;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: pink;
+        height: 60px;
+        width: 100vw;
+        position: sticky;
+        top: 0;
+      }
+      .container {
+        background-color: green;
+        height: 580px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        position: relative;
+        height: 380px;
+        width: 380px;
+        margin: 20px;
+        padding: 50px;
+      }
+      .item1 {
+        background-color: lightpink;
+        position: relative;
+        left: 200px;
+      }
 
-        .item-2{
-            background-color: blue;
-            position: relative;
-            left:350px;
+      .item-2 {
+        background-color: blue;
+        position: relative;
+        left: 350px;
+      }
 
-        }
-
-        .item-3{
-            border-radius: 10px;
-            background-color: black;
-            color: white;
-            position: relative;
-            top: 600px;
-            right: 500px;
-            width:70vw;
-            height: 50px;
-        }
-        footer{
-            background-color: white;
-            position: absolute;
-        }
+      .item-3 {
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        position: relative;
+        border: 2px solid white;
+        top: 400px;
+        right: 500px;
+        width: 760px;
+        height: 50px;
+      }
+      footer {
+        background-color: blue;
+        position: relative;
+        top: 250px;
+        height: 30px;
+      }
+      .orangebox {
+        background-color: orange;
+        width: 155px;
+        height: 132px;
+        position: fixed;
+        bottom: 12px;
+        right: 12px;
+        border-radius: 156px;
+      }
     </style>
-</head>
-<body>
-    <header>hi</header>
+  </head>
+  <body>
+    <header><nav>hi</nav></header>
     <div class="container">
-        <div class="item item1">1</div>
-        <div class="item item-2">2</div>
-        <div class="item item-3">Welcome to this Sigma Web Devlopment Express</div>
+      <div class="item item1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">
+        Welcome to this Sigma Web Devlopment Express
+      </div>
     </div>
+    <div class="orangebox"></div>
     <footer>3</footer>
-</body>
+  </body>
 </html>
