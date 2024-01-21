@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Color Website</title>
+    <style>
+      :root {
+        --color: red;
+        --textcolor: white;
+        --border: blue;
+        --margin: 5px
+      }
+
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+
+      .container {
+        display: flex;
+        background-color: var(--color);
+        color: var(--textcolor);
+      }
+      ul{
+        display: flex;
+        margin:var(--margin);
+        padding: var(--margin);
+        border: 2px solid var(--border);
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+      }
+      li{
+        margin:var(--margin);
+        padding:var(--margin) ;
+        border: 2px solid var(--border)
+      }
+    </style>
+  </head>
+  <body>
+    <!-- if you see this, comment :Bhupendra Jogi" in the comments. He is my friendwho has visited a lot of places in the US -->
+    <div class="container">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </body>
+</html>
