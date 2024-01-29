@@ -44,6 +44,7 @@ const playGame = (userChoice) => {
   if (userChoice === compChoice) {
     //Draw game
     drawGame();
+    msg.innerText = ` ${userChoice} = ${compChoice}`;
   } else {
     let userWin = true;
     if (userChoice === "rock") {
@@ -54,13 +55,18 @@ const playGame = (userChoice) => {
       userWin = compChoice === "rock" ? false : true;
     }
     showWinner(userWin);
+    if(userWin){
+    msg.innerText = `You Win ${userChoice} wins over ${compChoice}`;
+    }
+    else{
+      msg.innerText = `You LOSE ${compChoice} wins over ${userChoice}`;
+    };
   }
 };
 
 choices.forEach((choice) => {
   choice.addEventListener("click", () => {
     const userChoice = choice.getAttribute("id");
-    console.log(`choice was clicked ${userChoice}`);
     playGame(userChoice);
   });
 });
